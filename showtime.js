@@ -1,13 +1,26 @@
-//showtime.js
-
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-require('dotenv').config({ path: '../../.env' });
+const admin = require('firebase-admin');
+require('dotenv').config();
 
-async function scrapeCinepolis() {
-    const zoneValue = 'zona-35';
-    const value = `area/35`;
+// Initialize Firebase Admin SDK
+const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://cinebot-7f35b-default-rtdb.firebaseio.com"
+});
+
+const db = admin.firestore();
+
+async function scrapeCinepolis(zoneValue) {
+    let value = zoneValue;
+    if (zoneValue.includes('zona-')) {
+        value = `area/${zoneValue.replace('zona-', '')}`;
+    } else if (zoneValue.includes('estado-')) {
+        value = `state/${zoneValue.replace('estado-', '')}`;
+    }
 
     const browser = await puppeteer.launch({
         executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
@@ -17,6 +30,11 @@ async function scrapeCinepolis() {
     const page = await browser.newPage();
 
     await page.setRequestInterception(true);
+
+    const scrapedData = {
+        movies: null,
+        showtimes: null
+    };
 
     page.on('request', request => {
         if (request.resourceType() === 'fetch') {
@@ -38,17 +56,16 @@ async function scrapeCinepolis() {
         if (targetUrls.includes(url) && status === 200 && contentType && contentType.includes('application/json')) {
             try {
                 const data = await response.json();
-                const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-                const filenamePrefix = url.includes('/movies/?') ? 'showtime' : 'movies';
-                const filename = `${filenamePrefix}_${timestamp}.json`;
-                const filePath = path.join(__dirname, 'queries', filename);
+                if (url.includes('/movies/?')) {
+                    scrapedData.showtimes = data;
+                } else {
+                    scrapedData.movies = data;
+                }
 
-                fs.mkdirSync(path.dirname(filePath), { recursive: true });
-
-                fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
-                    if (err) console.error('Error writing file:', err);
-                    else console.log(`Saved response to ${filePath}`);
-                });
+                // Check if both data have been fetched and save to Firestore
+                if (scrapedData.movies && scrapedData.showtimes) {
+                    await saveToFirestore(scrapedData);
+                }
             } catch (error) {
                 console.error(`Error saving response from ${url}:`, error);
             }
@@ -60,10 +77,26 @@ async function scrapeCinepolis() {
     console.log('Page has been loaded. Responses from specified fetch requests will be saved.');
 }
 
-scrapeCinepolis().then(() => {
-    console.log('Scraping completed.');
-    process.exit(0);
-}).catch((error) => {
-    console.error('Scraping error:', error);
-    process.exit(1);
-});
+async function saveToFirestore(data) {
+    try {
+        const docRef = await db.collection('sessions').add(data);
+        console.log(`Document successfully written with ID: ${docRef.id}`);
+    } catch (error) {
+        console.error('Error writing document to Firestore: ', error);
+    }
+}
+
+const zoneValue = 'zona-35';
+
+if (zoneValue) {
+    scrapeCinepolis(zoneValue).then(() => {
+        console.log('Scraping completed.');
+        process.exit(0); // Exit the process successfully
+    }).catch((error) => {
+        console.error('Scraping error:', error);
+        process.exit(1); // Exit with an error code
+    });
+} else {
+    console.error('Zone value not provided.');
+    process.exit(1); // Exit with an error code
+}
