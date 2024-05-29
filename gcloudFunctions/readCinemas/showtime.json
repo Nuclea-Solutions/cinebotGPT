@@ -1,0 +1,2011 @@
+{
+  "dates": [
+    "2024-05-28",
+    "2024-05-29",
+    "2024-05-31",
+    "2024-06-01",
+    "2024-06-06",
+    "2024-06-07",
+    "2024-06-08",
+    "2024-06-09",
+    "2024-06-10",
+    "2024-06-11",
+    "2024-06-12"
+  ],
+  "cinemas": [
+    {
+      "id": 126,
+      "name": "San Gaspar",
+      "lat": 20.677239,
+      "lng": -103.256983,
+      "platinum": false,
+      "area": {
+        "id": 38,
+        "name": "Tonalá"
+      },
+      "state": {
+        "id": 14,
+        "name": "Jalisco"
+      },
+      "info": {
+        "address": "Prolongacion Pablo Valdez N° 350, Col. Fraccionamiento Los Camichines, Tonala Jalisco.",
+        "phone": "0155-5257-6969",
+        "neighborhood": "",
+        "hours": "",
+        "description": "",
+        "facebook_url": null,
+        "twitter_url": null,
+        "instagram_url": null,
+        "footer_msg": "",
+        "coming_soon_text": "",
+        "jobs_form": "",
+        "map_image": "//statics.cinemex.com/uploads/cms/cinemas/126-map.jpg",
+        "map_link": "https://www.google.com/maps/search/?api=1&query=20.677239,-103.256983&query_place_id=ChIJn3GKBqG2KIQRpBv_6sy5JaI"
+      },
+      "candybar": false,
+      "includeQr": true,
+      "image": "",
+      "status": "open",
+      "attributes": [
+        "3d"
+      ],
+      "alt_cinemas": [],
+      "movies": [
+        {
+          "id": 60313,
+          "name": "Furiosa: De La Saga Mad Max",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/y2Dw7X1VYVpVnrz-200x295.jpg",
+          "type": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "imax",
+            "palco",
+            "dolby_atmos",
+            "v4d",
+            "platinum",
+            "macro",
+            "confort",
+            "jumbo",
+            "premiere",
+            "ESTRENO"
+          ],
+          "info": {
+            "sinopsis": "Mientras el mundo caía, la joven Furiosa es arrebatada del Lugar Verde de Muchas Madres y cae en manos de una gran Horda de Motociclistas liderada por el Señor de la Guerra Dementus. Navegando por Wasteland, se encuentran con la Ciudadela presidida por The Immortan Joe. Mientras los dos Tiranos luchan por el dominio, Furiosa debe sobrevivir a muchas pruebas mientras reúne los medios para encontrar el camino a casa.",
+            "original_title": "Furiosa: A Mad Max Saga",
+            "director": "George Miller",
+            "cast": "Anya Taylor-Joy, Chris Hemsworth, Alyla Browne, Tom Burke, Tom Hardy, Quaden Bayles, Nathan Jones, Angus Sampson, Daniel Webber, Lachy Hulme",
+            "country": "Australia, Estados Unidos",
+            "genre": [
+              "Acción",
+              "Aventura"
+            ],
+            "rating": "B15",
+            "year": "2024",
+            "duration": "2h 22m",
+            "trailer": "https://www.youtube.com/watch?v=yYu5ui61gQM",
+            "imdb_url": "",
+            "distributor": "Warner Bros. Pictures"
+          },
+          "attributes": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "imax",
+            "palco",
+            "dolby_atmos",
+            "v4d",
+            "platinum",
+            "macro",
+            "confort",
+            "jumbo"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/y2Dw7X1VYVpVnrz-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/y2Dw7X1VYVpVnrz-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/y2Dw7X1VYVpVnrz-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/y2Dw7X1VYVpVnrz-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/60313/furiosa-de-la-saga-mad-max",
+          "featured": true,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [
+            {
+              "label": "Estreno",
+              "bgcolor": "#ee174f",
+              "textcolor": "#FFFFFF"
+            }
+          ],
+          "date_created": "2024-05-08",
+          "popularity": 4,
+          "extra": {
+            "fb_pixels": [
+              "2019958738257977"
+            ]
+          },
+          "versions": [
+            {
+              "id": 60350,
+              "legacy_id_bis": "35450",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729486",
+                  "legacy_id": "14825",
+                  "datetime": "2024-05-28T14:00:00-06:00",
+                  "date": 1716926400,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T14:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 7,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729486",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717193",
+                  "legacy_id": "14837",
+                  "datetime": "2024-05-28T15:00:00-06:00",
+                  "date": 1716930000,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T15:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 8,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717193",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717187",
+                  "legacy_id": "14821",
+                  "datetime": "2024-05-28T16:00:00-06:00",
+                  "date": 1716933600,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T16:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 3,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717187",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729500",
+                  "legacy_id": "14919",
+                  "datetime": "2024-05-28T17:00:00-06:00",
+                  "date": 1716937200,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T17:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 7,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729500",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729501",
+                  "legacy_id": "14920",
+                  "datetime": "2024-05-28T18:00:00-06:00",
+                  "date": 1716940800,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T18:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 8,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729501",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717189",
+                  "legacy_id": "14824",
+                  "datetime": "2024-05-28T18:30:00-06:00",
+                  "date": 1716942600,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T18:30:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 6,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717189",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729499",
+                  "legacy_id": "14915",
+                  "datetime": "2024-05-28T19:00:00-06:00",
+                  "date": 1716944400,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T19:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 3,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729499",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729487",
+                  "legacy_id": "14826",
+                  "datetime": "2024-05-28T20:00:00-06:00",
+                  "date": 1716948000,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T20:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 7,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729487",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717191",
+                  "legacy_id": "14835",
+                  "datetime": "2024-05-28T21:00:00-06:00",
+                  "date": 1716951600,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T21:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 8,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717191",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717190",
+                  "legacy_id": "14828",
+                  "datetime": "2024-05-28T21:35:00-06:00",
+                  "date": 1716953700,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T21:35:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 6,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717190",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717188",
+                  "legacy_id": "14822",
+                  "datetime": "2024-05-28T22:00:00-06:00",
+                  "date": 1716955200,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T22:00:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60350,
+                  "parent_movie_id": 60313,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 3,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717188",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Platino Premium Palco Dolby Atmos 4D Tradicional Español IMAX Macropantalla Confort Jumbo"
+        },
+        {
+          "id": 59952,
+          "name": "El Planeta De Los Simios: Nuevo Reino",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/BzIDekb8c6H8hp6-200x295.jpg",
+          "type": [
+            "traditional",
+            "platinum",
+            "lang_es",
+            "premium",
+            "confort"
+          ],
+          "info": {
+            "sinopsis": "El director Wes Ball le da nueva vida a la épica franquicia global situada varias generaciones en el futuro tras el reinado de César, en el que los simios son la especie dominante que vive en armonía y los humanos han quedado reducidos a vivir en las sombras. Mientras un nuevo y tiránico líder simio construye su imperio, un joven simio emprende un viaje desgarrador que le llevará a cuestionarse todo lo que sabe sobre el pasado y a tomar decisiones que definirán el futuro de simios y humanos por igual.",
+            "original_title": "Kingdom Of The Planet Of The Apes",
+            "director": "Wes Ball",
+            "cast": "Owen Teague, Freya Allan, Kevin Durand, Peter Macon y William H. Macy",
+            "country": "Estados Unidos",
+            "genre": [
+              "Acción"
+            ],
+            "rating": "S/C",
+            "year": "2024",
+            "duration": "2h 25m",
+            "trailer": "https://www.youtube.com/watch?v=t9pgdfvh_dg",
+            "imdb_url": "",
+            "distributor": "20th Century Studios"
+          },
+          "attributes": [
+            "traditional",
+            "platinum",
+            "lang_es",
+            "premium",
+            "confort"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/BzIDekb8c6H8hp6-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/BzIDekb8c6H8hp6-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/BzIDekb8c6H8hp6-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/BzIDekb8c6H8hp6-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/59952/el-planeta-de-los-simios-nuevo-reino",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [],
+          "date_created": "2024-04-17",
+          "popularity": 1,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 60073,
+              "legacy_id_bis": "35455",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54717214",
+                  "legacy_id": "14827",
+                  "datetime": "2024-05-28T13:25:00-06:00",
+                  "date": 1716924300,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T13:25:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60073,
+                  "parent_movie_id": 59952,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 9,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717214",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729514",
+                  "legacy_id": "14819",
+                  "datetime": "2024-05-28T14:45:00-06:00",
+                  "date": 1716929100,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T14:45:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60073,
+                  "parent_movie_id": 59952,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 2,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729514",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717217",
+                  "legacy_id": "14851",
+                  "datetime": "2024-05-28T16:15:00-06:00",
+                  "date": 1716934500,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T16:15:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60073,
+                  "parent_movie_id": 59952,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 9,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717217",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729513",
+                  "legacy_id": "14818",
+                  "datetime": "2024-05-28T17:45:00-06:00",
+                  "date": 1716939900,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T17:45:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60073,
+                  "parent_movie_id": 59952,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 2,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729513",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717215",
+                  "legacy_id": "14830",
+                  "datetime": "2024-05-28T19:15:00-06:00",
+                  "date": 1716945300,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T19:15:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60073,
+                  "parent_movie_id": 59952,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 9,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717215",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729515",
+                  "legacy_id": "14820",
+                  "datetime": "2024-05-28T20:40:00-06:00",
+                  "date": 1716950400,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T20:40:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60073,
+                  "parent_movie_id": 59952,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 2,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729515",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54717216",
+                  "legacy_id": "14831",
+                  "datetime": "2024-05-28T22:15:00-06:00",
+                  "date": 1716956100,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T22:15:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60073,
+                  "parent_movie_id": 59952,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 9,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54717216",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Platino Premium Tradicional Español Confort"
+        },
+        {
+          "id": 58923,
+          "name": "Kung Fu Panda 4",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/vnD8VidgSAkmxZq-200x295.jpg",
+          "type": [
+            "lang_es",
+            "traditional",
+            "confort",
+            "premium"
+          ],
+          "info": {
+            "sinopsis": "Después de tres aventuras desafiando a la muerte y derrotando a villanos de clase mundial con su incomparable coraje y sus alocadas habilidades en las artes marciales, Po, el Guerrero Dragón (Omar Chaparro), es llamado por el destino para... tomarse un descanso. Específicamente, se le pide que se convierta en el líder espiritual del Valle de la Paz. Esto plantea un par de problemas obvios. En primer lugar, Po sabe tanto de liderazgo espiritual como de dieta paleo, y en segundo lugar, necesita encontrar y entrenar rápidamente a un nuevo Guerrero Dragón antes de poder asumir su nuevo y elevado cargo. Y lo peor, recientemente se ha avistado a una malvada y poderosa líder criminal, La Camaleona, una pequeña reptil que puede transformarse en cualquier criatura, grande o chica. Y La Camaleona ha puesto sus avariciosos y brillantes ojos en el Bastón de la Sabiduría de Po, que le daría el poder de volver a convocar a todos los maestros villanos que Po ha derrotado en el reino de los espíritus. Po necesitará ayuda. La encontrará en la forma de la astuta y rápida ladrona Zhen, una zorra ladrona que sorprende a Po, pero cuyas habilidades resultarán inestimables. En su empeño por proteger el Valle de la Paz de las garras reptilianas de La Camaleona, este cómico dúo tendrá que trabajar en equipo. En el proceso, Po descubrirá que los héroes pueden encontrarse en los lugares más inesperados.",
+            "original_title": "Kung Fu Panda 4",
+            "director": "Mike Mitchell",
+            "cast": "Jack Black, Awkwafina, Viola Davis, Dustin Hoffman, James Hong, Bryan Cranston, Ian McShane, Ke Huy Quan",
+            "country": "Estados Unidos",
+            "genre": [
+              "Animación",
+              "Aventura",
+              "Comedia"
+            ],
+            "rating": "A",
+            "year": "2024",
+            "duration": "1h 35m",
+            "trailer": "https://www.youtube.com/watch?v=z46uV-P2ySM",
+            "imdb_url": "",
+            "distributor": "Universal Pictures"
+          },
+          "attributes": [
+            "lang_es",
+            "traditional",
+            "confort",
+            "premium"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/vnD8VidgSAkmxZq-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/vnD8VidgSAkmxZq-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/vnD8VidgSAkmxZq-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/vnD8VidgSAkmxZq-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/58923/kung-fu-panda-4",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [],
+          "date_created": "2024-02-28",
+          "popularity": 20,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 58924,
+              "legacy_id_bis": "35175",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729479",
+                  "legacy_id": "14839",
+                  "datetime": "2024-05-28T14:20:00-06:00",
+                  "date": 1716927600,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T14:20:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 58924,
+                  "parent_movie_id": 58923,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 6,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729479",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Premium Español Tradicional Confort"
+        },
+        {
+          "id": 60051,
+          "name": "Garfield - Fuera De Casa",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/vw8jadnoV80sE5f-200x295.jpg",
+          "type": [
+            "lang_es",
+            "traditional",
+            "v3d",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "info": {
+            "sinopsis": "Garfield, el gato casero mundialmente famoso odia-lunes y amante de las lasañas, está por tener una aventura fuera de casa. Después de una inesperada reunión con su ausente padre – un sucio gato callejero llamado Vic – Garfield y su canino amigo Odie, son forzados a dejar su consentida vida para unirse a Vic en un divertido asalto de gran riesgo.",
+            "original_title": "The Garfield Movie",
+            "director": "Mark Dindal",
+            "cast": "Nicholas Hoult, Chris Patt, Samuel L. Jackson, Harvey Guillén, Luke Cinque-White",
+            "country": "Estados Unidos",
+            "genre": [
+              "Animación",
+              "Comedia",
+              "Familiar"
+            ],
+            "rating": "AA",
+            "year": "2024",
+            "duration": "1h 41m",
+            "trailer": "https://www.youtube.com/watch?v=9u2N09NhRtw",
+            "imdb_url": "",
+            "distributor": "Sony Pictures"
+          },
+          "attributes": [
+            "lang_es",
+            "traditional",
+            "v3d",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/vw8jadnoV80sE5f-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/vw8jadnoV80sE5f-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/vw8jadnoV80sE5f-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/vw8jadnoV80sE5f-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/60051/garfield-fuera-de-casa",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [],
+          "date_created": "2024-04-22",
+          "popularity": 3,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 60053,
+              "legacy_id_bis": "35501",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729527",
+                  "legacy_id": "14847",
+                  "datetime": "2024-05-28T14:30:00-06:00",
+                  "date": 1716928200,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T14:30:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60053,
+                  "parent_movie_id": 60051,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 10,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729527",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729525",
+                  "legacy_id": "14834",
+                  "datetime": "2024-05-28T15:25:00-06:00",
+                  "date": 1716931500,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T15:25:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60053,
+                  "parent_movie_id": 60051,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 5,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729525",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729526",
+                  "legacy_id": "14842",
+                  "datetime": "2024-05-28T16:40:00-06:00",
+                  "date": 1716936000,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T16:40:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60053,
+                  "parent_movie_id": 60051,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 10,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729526",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729524",
+                  "legacy_id": "14832",
+                  "datetime": "2024-05-28T17:35:00-06:00",
+                  "date": 1716939300,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T17:35:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60053,
+                  "parent_movie_id": 60051,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 4,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729524",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729529",
+                  "legacy_id": "14921",
+                  "datetime": "2024-05-28T18:45:00-06:00",
+                  "date": 1716943500,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T18:45:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60053,
+                  "parent_movie_id": 60051,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 10,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729529",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Platino Premium 3D Español Tradicional Confort"
+        },
+        {
+          "id": 60345,
+          "name": "Amigos Imaginarios",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/5yvihy1pzOWdALw-200x295.jpg",
+          "type": [
+            "traditional",
+            "platinum",
+            "lang_es",
+            "premium",
+            "confort"
+          ],
+          "info": {
+            "sinopsis": "Del escritor y director John Krasinski, Amigos Imaginarios trata sobre una niña que descubre que puede ver a los amigos imaginarios de las personas –y lo que puede hacer con ese superpoder– mientras se embarca en una aventura mágica para reconectar a los AMIs olvidados con sus niños. Amigos Imaginarios está protagonizada por Ryan Reynolds, John Krasinski, Cailey Fleming y Fiona Shaw junto a muchos personajes maravillosamente únicos que reflejan el increíble poder de la imaginación de un niño.",
+            "original_title": "IF",
+            "director": "John Krasinski",
+            "cast": "Ryan Reynolds, Cailey Fleming, John Krasinski, Fiona Shaw",
+            "country": "Estados Unidos",
+            "genre": [
+              "Familiar"
+            ],
+            "rating": "A",
+            "year": "",
+            "duration": "1h 40m",
+            "trailer": "https://www.youtube.com/watch?v=NGKheYXKVvU",
+            "imdb_url": "",
+            "distributor": "Paramount Pictures"
+          },
+          "attributes": [
+            "traditional",
+            "platinum",
+            "lang_es",
+            "premium",
+            "confort"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/5yvihy1pzOWdALw-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/5yvihy1pzOWdALw-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/5yvihy1pzOWdALw-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/5yvihy1pzOWdALw-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/60345/amigos-imaginarios",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [],
+          "date_created": "2024-05-08",
+          "popularity": 2,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 60368,
+              "legacy_id_bis": "35568",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729541",
+                  "legacy_id": "14914",
+                  "datetime": "2024-05-28T13:45:00-06:00",
+                  "date": 1716925500,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T13:45:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60368,
+                  "parent_movie_id": 60345,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 1,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729541",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729538",
+                  "legacy_id": "14846",
+                  "datetime": "2024-05-28T15:55:00-06:00",
+                  "date": 1716933300,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T15:55:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60368,
+                  "parent_movie_id": 60345,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 1,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729538",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729536",
+                  "legacy_id": "14843",
+                  "datetime": "2024-05-28T17:25:00-06:00",
+                  "date": 1716938700,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T17:25:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60368,
+                  "parent_movie_id": 60345,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 5,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729536",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729535",
+                  "legacy_id": "14840",
+                  "datetime": "2024-05-28T18:15:00-06:00",
+                  "date": 1716941700,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T18:15:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60368,
+                  "parent_movie_id": 60345,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 1,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729535",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729537",
+                  "legacy_id": "14844",
+                  "datetime": "2024-05-28T20:20:00-06:00",
+                  "date": 1716949200,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T20:20:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60368,
+                  "parent_movie_id": 60345,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 1,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729537",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729539",
+                  "legacy_id": "14850",
+                  "datetime": "2024-05-28T22:30:00-06:00",
+                  "date": 1716957000,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T22:30:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60368,
+                  "parent_movie_id": 60345,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 1,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729539",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Platino Premium Tradicional Español Confort"
+        },
+        {
+          "id": 60415,
+          "name": "Tarot De La Muerte",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/vJLlrURFbgPx7rB-200x295.jpg",
+          "type": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "info": {
+            "sinopsis": "Cuando un grupo de amigos rompe la regla sagrada de la lectura del tarot -nunca uses la baraja de alguien más - desata sin saberlo un mal indescriptible atrapado dentro de esas cartas malditas. Uno a uno, se enfrentan cara a cara con su destino y terminan en una carrera contra la muerte para escapar del futuro predicho en sus lecturas del tarot.",
+            "original_title": "Tarot",
+            "director": "Spenser Cohen, Anna Halberg",
+            "cast": "Harriet Slater, Adain Bradley, Avantika, Jacob Batalon",
+            "country": "Estados Unidos",
+            "genre": [
+              "Terror"
+            ],
+            "rating": "B15",
+            "year": "2024",
+            "duration": "1h 32m",
+            "trailer": "https://www.youtube.com/watch?v=EOVMrMRO6tA",
+            "imdb_url": "",
+            "distributor": "Sony Pictures"
+          },
+          "attributes": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/vJLlrURFbgPx7rB-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/vJLlrURFbgPx7rB-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/vJLlrURFbgPx7rB-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/vJLlrURFbgPx7rB-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/60415/tarot-de-la-muerte",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [],
+          "date_created": "2024-05-15",
+          "popularity": 5,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 60416,
+              "legacy_id_bis": "35572",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729543",
+                  "legacy_id": "14841",
+                  "datetime": "2024-05-28T21:55:00-06:00",
+                  "date": 1716954900,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T21:55:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60416,
+                  "parent_movie_id": 60415,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 4,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729543",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Platino Premium Tradicional Español Confort"
+        },
+        {
+          "id": 60413,
+          "name": "V De Victor",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/ctOFtnUYw8Gt2jm-200x295.jpg",
+          "type": [
+            "lang_es",
+            "traditional",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "info": {
+            "sinopsis": "Víctor es un exboxeador cuya carrera se vio truncada por un golpe desafortunado. Desde entonces, ha trabajado en diversos empleos para sobrevivir, mientras vive con su madre. Todo cambia cuando su hija de ocho años, Luna , descubre en internet que su padre fue una vez un famoso luchador. Decidida a cambiar su destino, Luna emprende la misión de devolver a su papá al ring, enfrentándolo nuevamente a su antiguo rival y leyenda del boxeo, \"El Toro\". Para emprender este nuevo reto, Víctor contará con el apoyo de un veterano anciano del asilo donde trabaja; sus compañeros de trabajo y su exesposa. Esta familia inesperada será el “staff” que ayudará a Víctor a recuperar la confianza en sí mismo y perseguir sus sueños de regresar al cuadrilátero, demostrando que la verdadera grandeza va más allá de la victoria.",
+            "original_title": "V De Victor",
+            "director": "Frank Ariza",
+            "cast": "Memo Villegas, Joaquin Cosío, Norma Angélica, Adriana Montes De Oca, Camila Nuñez",
+            "country": "España",
+            "genre": [
+              "Comedia"
+            ],
+            "rating": "A",
+            "year": "2024",
+            "duration": "1h 41m",
+            "trailer": "https://www.youtube.com/watch?v=W_M9WkFaZ_M",
+            "imdb_url": "",
+            "distributor": "Star Plus"
+          },
+          "attributes": [
+            "lang_es",
+            "traditional",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/ctOFtnUYw8Gt2jm-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/ctOFtnUYw8Gt2jm-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/ctOFtnUYw8Gt2jm-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/ctOFtnUYw8Gt2jm-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/60413/v-de-victor",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [],
+          "date_created": "2024-05-15",
+          "popularity": 16,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 60417,
+              "legacy_id_bis": "35574",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729545",
+                  "legacy_id": "14922",
+                  "datetime": "2024-05-28T16:30:00-06:00",
+                  "date": 1716935400,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T16:30:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60417,
+                  "parent_movie_id": 60413,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 6,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729545",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Platino Premium Español Tradicional Confort"
+        },
+        {
+          "id": 60411,
+          "name": "Monkey Man: El Despertar De La Bestia",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/IZkOxZWDNm6L3Tu-200x295.jpg",
+          "type": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "info": {
+            "sinopsis": "Kid (Dev Patel), sobrevive noche tras noche oculto tras una máscara de gorila en un mundo de lucha clandestina donde recibe golpizas de brutales luchadores implacables a cambio de dinero. Esto terminará al infiltrarse en la élite criminal de la ciudad. Con su pasado lleno de traumas y rencores, Kid desatará una explosiva campaña de venganza para ajustar cuentas con aquellos que le arrebataron todo.",
+            "original_title": "Monkey Man",
+            "director": "Dev Patel",
+            "cast": "Dev Patel, Sharlto Copley, Pitobash Tripathy, Sobhita Dhulipala",
+            "country": "Estados Unidos",
+            "genre": [
+              "Acción",
+              "Thriller"
+            ],
+            "rating": "C",
+            "year": "2024",
+            "duration": "2h 01m",
+            "trailer": "https://www.youtube.com/watch?v=P_UKoXgv144",
+            "imdb_url": "",
+            "distributor": "Diamond Films"
+          },
+          "attributes": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/IZkOxZWDNm6L3Tu-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/IZkOxZWDNm6L3Tu-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/IZkOxZWDNm6L3Tu-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/IZkOxZWDNm6L3Tu-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/60411/monkey-man-el-despertar-de-la-bestia",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [],
+          "date_created": "2024-05-15",
+          "popularity": 11,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 60418,
+              "legacy_id_bis": "35578",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729547",
+                  "legacy_id": "14829",
+                  "datetime": "2024-05-28T20:50:00-06:00",
+                  "date": 1716951000,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T20:50:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60418,
+                  "parent_movie_id": 60411,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 10,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": true,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729547",
+                  "alerts": [
+                    "Estás a punto de comprar boletos para una película con clasificación C, exclusiva para mayores de 18 años. Haciendo click en Continuar confirmas que tus acompañantes y tú son mayores de 18 años."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Platino Premium Tradicional Español Confort"
+        },
+        {
+          "id": 60477,
+          "name": "Good Boy",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/WBIDnkkjswS7D1Q-200x295.jpg",
+          "type": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "confort",
+            "premiere",
+            "ESTRENO"
+          ],
+          "info": {
+            "sinopsis": "Christian, un chico guapo y adinerado, conoce a Sigrid, una joven estudiante, a través de una aplicación de citas. Congenian rápidamente, pero solo hay un problema Christian le habla de su perro y ese mascota parece ser un hombre  que se disfraza y actúa constantemente como un perro. En Sigrid crece el misterio por saber quién es esta persona detrás del disfraz de perro y cuál es su relación con el pasado de Christian.",
+            "original_title": "Good Boy",
+            "director": "Viljar Boe",
+            "cast": "Gard Lokke, Katrine Fredriksen, Nicolai Narvesen",
+            "country": "Noruega",
+            "genre": [
+              "Terror",
+              "Thriller"
+            ],
+            "rating": "B15",
+            "year": "2022",
+            "duration": "1h 16m",
+            "trailer": "https://www.youtube.com/watch?v=CYzDEndF1NQ",
+            "imdb_url": "",
+            "distributor": "Dark Side Distribution"
+          },
+          "attributes": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "confort"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/WBIDnkkjswS7D1Q-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/WBIDnkkjswS7D1Q-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/WBIDnkkjswS7D1Q-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/WBIDnkkjswS7D1Q-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/60477/good-boy",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [
+            {
+              "label": "Estreno",
+              "bgcolor": "#ee174f",
+              "textcolor": "#FFFFFF"
+            }
+          ],
+          "date_created": "2024-05-21",
+          "popularity": 15,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 60484,
+              "legacy_id_bis": "35602",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729549",
+                  "legacy_id": "14823",
+                  "datetime": "2024-05-28T19:40:00-06:00",
+                  "date": 1716946800,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T19:40:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60484,
+                  "parent_movie_id": 60477,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 5,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729549",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729551",
+                  "legacy_id": "14918",
+                  "datetime": "2024-05-28T21:25:00-06:00",
+                  "date": 1716953100,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T21:25:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60484,
+                  "parent_movie_id": 60477,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 5,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729551",
+                  "alerts": [
+                    "Esta película está clasificada como B15. No es recomendada para menores de 15 años ya que contiene escenas de violencia explícita y lenguaje no apto para menores."
+                  ],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Premium Tradicional Español Confort"
+        },
+        {
+          "id": 60479,
+          "name": "Hachiko: Una Historia Verdadera",
+          "score": 0,
+          "cover": "//statics.cinemex.com/movie_posters/aIo8Mzkh7DJO8kI-200x295.jpg",
+          "type": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "platinum",
+            "confort",
+            "premiere",
+            "ESTRENO"
+          ],
+          "info": {
+            "sinopsis": "La vida del profesor Chen Jingxiu tiene un giro inesperado cuando en su camino se cruza con un cachorro abandonado. Desde ese momento, entre Jingxiu y Hachiko, comienza a gestarse una gran amistad. Pero esta complicidad se verá en riesgo cuándo un día, mientras Hachiko lo espera en la estación del teleférico, el profesor no regresa. Lo que pondrá a prueba la fidelidad de Hachiko, pues ahora su vida se centrará en la espera de su inseparable amo.",
+            "original_title": "Hachiko",
+            "director": "Xu Ang",
+            "cast": "Xiaogang Feng, Joan Chen, Jugang Bai",
+            "country": "China",
+            "genre": [
+              "Drama"
+            ],
+            "rating": "A",
+            "year": "2023",
+            "duration": "2h",
+            "trailer": "https://www.youtube.com/watch?v=dUYK5x7PGHc",
+            "imdb_url": "",
+            "distributor": "Tulip Pictures"
+          },
+          "attributes": [
+            "traditional",
+            "lang_es",
+            "premium",
+            "platinum",
+            "confort"
+          ],
+          "parent_id": null,
+          "poster_small": "//statics.cinemex.com/movie_posters/aIo8Mzkh7DJO8kI-360x540.jpg",
+          "poster_medium": "//statics.cinemex.com/movie_posters/aIo8Mzkh7DJO8kI-750x1125.jpg",
+          "poster_big": "//statics.cinemex.com/movie_posters/aIo8Mzkh7DJO8kI-1080x1620.jpg",
+          "poster_gif": null,
+          "poster_mp4": null,
+          "poster_featured": null,
+          "poster_featured_web": null,
+          "featured_bg": "//statics.cinemex.com/movie_posters/aIo8Mzkh7DJO8kI-750x1125.jpg",
+          "url": "//cinemex.com/pelicula/60479/hachiko-una-historia-verdadera",
+          "featured": false,
+          "featured_text": "",
+          "display_title": false,
+          "spotlight": false,
+          "ribbons": [
+            {
+              "label": "Estreno",
+              "bgcolor": "#ee174f",
+              "textcolor": "#FFFFFF"
+            }
+          ],
+          "date_created": "2024-05-21",
+          "popularity": 12,
+          "extra": {
+            "fb_pixels": [
+              ""
+            ]
+          },
+          "versions": [
+            {
+              "id": 60485,
+              "legacy_id_bis": "35608",
+              "label": "Español Tradicional",
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "attributes": {
+                "primary": [
+                  "lang_es",
+                  "traditional"
+                ],
+                "secondary": [],
+                "primary_label": "Español Tradicional",
+                "secondary_label": ""
+              },
+              "sessions": [
+                {
+                  "id": "54729555",
+                  "legacy_id": "14917",
+                  "datetime": "2024-05-28T15:10:00-06:00",
+                  "date": 1716930600,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T15:10:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60485,
+                  "parent_movie_id": 60479,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 4,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729555",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                },
+                {
+                  "id": "54729553",
+                  "legacy_id": "14833",
+                  "datetime": "2024-05-28T19:35:00-06:00",
+                  "date": 1716946500,
+                  "tz_offset": -21600,
+                  "timestamp": "2024-05-28T19:35:00-06:00",
+                  "cinema_id": 126,
+                  "movie_id": 60485,
+                  "parent_movie_id": 60479,
+                  "premium": false,
+                  "extreme": false,
+                  "seatallocation": true,
+                  "screen_number": 4,
+                  "candybar": false,
+                  "payment_methods": [
+                    "cash"
+                  ],
+                  "adults_only": false,
+                  "availability": "high",
+                  "url": "https://cinemex.com/checkout/54729553",
+                  "alerts": [],
+                  "seat_types_override": [],
+                  "loading_override": null,
+                  "screen_override": null,
+                  "custom_pointer": null,
+                  "extra": [],
+                  "tickets_limit": 6
+                }
+              ]
+            }
+          ],
+          "label": "Platino Premium Tradicional Español Confort"
+        }
+      ]
+    }
+  ]
+}

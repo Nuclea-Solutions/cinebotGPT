@@ -1,0 +1,25 @@
+{
+  "name": "cinebotgpt",
+  "version": "1.0.0",
+  "description": "GPT to buy cinema tickets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nuclea-Solutions/cinebotGPT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nuclea-Solutions/cinebotGPT/issues"
+  },
+  "homepage": "https://github.com/Nuclea-Solutions/cinebotGPT#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.1.1"
+  }
+}
