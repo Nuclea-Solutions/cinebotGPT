@@ -24,14 +24,6 @@ async function main() {
       message: 'Please enter the document reference ID:',
     });
 
-    // Step 2: Ask for movie id (optional)
-    const { movieId } = await inquirer.default.prompt({
-      type: 'input',
-      name: 'movieId',
-      message: 'Please enter the movie ID (optional):',
-      default: '',
-    });
-
     // Fetch document from Firestore
     console.log(`Fetching document with ID: ${docRefId} from 'sessions' collection`);
     const doc = await db.collection('sessions').doc(docRefId).get();
@@ -44,36 +36,27 @@ async function main() {
     const data = doc.data();
     
     if (!data || !data.showtimes || !data.showtimes.cinemas) {
-      console.error('No showtimes or cinemas data found in the document.');
+      console.error('No cinemas data found in the document.');
       return;
     }
 
     let cinemas = data.showtimes.cinemas;
 
     // Extract and log the list of cinema names and IDs
-    const cinemaList = cinemas.map(cinema => `${cinema.area.name}, ${cinema.area.id}`);
-    console.log('Cinema list before filtering:', cinemaList);
+    const cinemaList = cinemas.map(cinema => `${cinema.name}, ${cinema.id}`);
+    console.log('Cinema list:', cinemaList);
 
-    // Filter cinemas based on movie ID if provided
-    if (movieId) {
-      cinemas = cinemas.filter((cinema) =>
-        cinema.showtimes.some((showtime) => showtime.movies.some((movie) => movie.id === parseInt(movieId)))
-      );
-    }
-
-    // Extract and log the list of cinema names and IDs after filtering
-    const filteredCinemaList = cinemas.map(cinema => `${cinema.area.name}, ${cinema.area.id}`);
-    console.log('Filtered cinema list:', filteredCinemaList);
-
-    // Display cinemas
-    if (cinemas.length > 0) {
-      console.log('Available Cinemas:');
-      cinemas.forEach((cinema, index) => {
-        console.log(`${index + 1}. ${cinema.area.name} - ${cinema.info.address}`);
-      });
-    } else {
-      console.log('No cinemas found for the given movie ID.');
-    }
+    // Create and print a list of movies (name and id) for each cinema
+    cinemas.forEach((cinema, index) => {
+      console.log(`Cinema ${index + 1}: ${cinema.name}`);
+      if (cinema.movies && cinema.movies.length > 0) {
+        cinema.movies.forEach(movie => {
+          console.log(`  - Movie ID: ${movie.id}, Name: ${movie.name}`);
+        });
+      } else {
+        console.log('  No movies found for this cinema.');
+      }
+    });
   } catch (error) {
     console.error('Error:', error);
   }
