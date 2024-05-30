@@ -1,0 +1,13 @@
+{
+  "name": "cinebot-query-cinemas",
+  "version": "1.0.0",
+  "description": "Cloud Function to query cinemas from Firestore document",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^9.0.0",
+    "dotenv": "^8.2.0"
+  }
+}
