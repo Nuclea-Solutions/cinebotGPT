@@ -21,6 +21,7 @@
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
     "firebase-admin": "^12.1.1",
+    "inquirer": "^9.2.22",
     "puppeteer": "^22.10.0"
   }
 }
