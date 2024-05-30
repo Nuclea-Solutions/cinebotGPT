@@ -24,6 +24,14 @@ async function main() {
       message: 'Please enter the document reference ID:',
     });
 
+    // Step 2: Ask for movie id (optional)
+    const { movieId } = await inquirer.default.prompt({
+      type: 'input',
+      name: 'movieId',
+      message: 'Please enter the movie ID (optional):',
+      default: '',
+    });
+
     // Fetch document from Firestore
     console.log(`Fetching document with ID: ${docRefId} from 'sessions' collection`);
     const doc = await db.collection('sessions').doc(docRefId).get();
@@ -57,6 +65,30 @@ async function main() {
         console.log('  No movies found for this cinema.');
       }
     });
+
+    // Filter cinemas based on movie ID if provided
+    if (movieId) {
+      cinemas = cinemas.filter((cinema) => {
+        if (!cinema.movies) {
+          return false;
+        }
+        return cinema.movies.some((movie) => movie.id === parseInt(movieId));
+      });
+    }
+
+    // Extract and log the list of cinema names and IDs after filtering
+    const filteredCinemaList = cinemas.map(cinema => `${cinema.name}, ${cinema.id}`);
+    console.log('Filtered cinema list:', filteredCinemaList);
+
+    // Display cinemas
+    if (cinemas.length > 0) {
+      console.log('Available Cinemas:');
+      cinemas.forEach((cinema, index) => {
+        console.log(`${index + 1}. ${cinema.name} - ${cinema.info.address}`);
+      });
+    } else {
+      console.log('No cinemas found for the given movie ID.');
+    }
   } catch (error) {
     console.error('Error:', error);
   }
