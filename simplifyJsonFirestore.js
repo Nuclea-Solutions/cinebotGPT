@@ -18,20 +18,40 @@ const rl = readline.createInterface({
 });
 
 const simplifyJson = data => {
-  return data.cinemas.map(cinema => ({
-    name: cinema.name,
-    id: cinema.id,
-    movies: cinema.movies.map(movie => ({
-      title: movie.title,
-      versions: movie.versions.map(version => ({
-        type: version.type,
-        sessions: version.sessions.map(session => ({
-          datetime: session.datetime,
-          showtime: session.showtime,
+  return data.cinemas.map(cinema => {
+    let infoArray;
+    if (Array.isArray(cinema.info)) {
+      infoArray = cinema.info;
+    } else if (cinema.info && typeof cinema.info === 'object') {
+      infoArray = [cinema.info];
+    } else {
+      infoArray = [];
+    }
+
+    return {
+      name: cinema.name,
+      id: cinema.id,
+      info: infoArray.map(info => ({
+        address: info.address,
+      })),
+      lat: cinema.lat,
+      lng: cinema.lng,
+      movies: cinema.movies.map(movie => ({
+        name: movie.name,
+        id: movie.id,
+        versions: movie.versions.map(version => ({
+          type: version.type,
+          sessions: version.sessions.map(session => ({
+            datetime: session.datetime,
+            showtime: session.showtime,
+            availability: session.availability,
+            id: session.id,
+            url: session.url,
+          }))
         }))
       }))
-    }))
-  }));
+    };
+  });
 };
 
 const writeJsonFile = (filePath, data) => {
