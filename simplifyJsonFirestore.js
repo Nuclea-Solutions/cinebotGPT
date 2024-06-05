@@ -160,7 +160,7 @@ const filterMoviesInCinemas = (data, cinemaIds, movieIds) => {
   const movieIdSet = new Set(movieIds);
 
   return {
-    cinemas: data.cinemas.filter(cinema => cinemaIdSet.has(cinema.id)).map(cinema => ({
+    cinemas: data.cinemas.filter(cinema => cinemaIds.length === 0 || cinemaIdSet.has(cinema.id)).map(cinema => ({
       name: cinema.name,
       id: cinema.id,
       info: [{
@@ -168,7 +168,7 @@ const filterMoviesInCinemas = (data, cinemaIds, movieIds) => {
       }],
       lat: cinema.lat,
       lng: cinema.lng,
-      movies: cinema.movies.filter(movie => movieIdSet.has(movie.id)).map(movie => ({
+      movies: cinema.movies.filter(movie => movieIds.length === 0 || movieIdSet.has(movie.id)).map(movie => ({
         name: movie.name,
         id: movie.id,
         versions: movie.versions.map(version => ({
@@ -208,11 +208,11 @@ const extractTimeZoneFromIsoDate = isoDate => isoDate.match(/(-|\+)([0-9]{2}):([
 
 const main = async () => {
   rl.question('Please enter the document reference ID: ', async docRefId => {
-    rl.question('Please enter the cinema IDs (comma-separated): ', async cinemaIdsStr => {
-      rl.question('Please enter the movie IDs (comma-separated): ', async movieIdsStr => {
+    rl.question('Please enter the cinema IDs (comma-separated, leave blank for all): ', async cinemaIdsStr => {
+      rl.question('Please enter the movie IDs (comma-separated, leave blank for all): ', async movieIdsStr => {
         try {
-          const cinemaIds = cinemaIdsStr.split(',').map(id => parseInt(id.trim(), 10));
-          const movieIds = movieIdsStr.split(',').map(id => parseInt(id.trim(), 10));
+          const cinemaIds = cinemaIdsStr ? cinemaIdsStr.split(',').map(id => parseInt(id.trim(), 10)) : [];
+          const movieIds = movieIdsStr ? movieIdsStr.split(',').map(id => parseInt(id.trim(), 10)) : [];
           
           const doc = await db.collection('sessions').doc(docRefId).get();
           if (!doc.exists) {
