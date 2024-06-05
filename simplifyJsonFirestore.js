@@ -127,35 +127,53 @@ const getDateFilterDisplayString = date => {
   }
 };
 
-const simplifyJson = data => {
-  return data.cinemas.map(cinema => ({
-    name: cinema.name,
-    id: cinema.id,
-    info: [{
-      address: cinema.info.address
-    }],
-    lat: cinema.info.lat,
-    lng: cinema.info.lng,
-    movies: cinema.movies.map(movie => ({
-      name: movie.name,
-      id: movie.id,
-      versions: movie.versions.map(version => ({
-        type: version.type,
-        sessions: version.sessions.map(session => ({
-          datetime: session.datetime,
-          showtime: session.showtime,
-          movie_id: session.movie_id,
-          cinema_id: session.cinema_id,
-          availability: session.availability,
-          id: session.id,
-          url: session.url,
-        }))
-      })).filter(version => version.sessions.length > 0) // Ensure versions with no sessions are filtered out
-    })).filter(movie => movie.versions.length > 0) // Ensure movies with no versions are filtered out
-  })).filter(cinema => cinema.movies.length > 0); // Ensure cinemas with no movies are filtered out
+const simplifyJson = (data, showtimeDates) => {
+  const cinemaNames = new Set();
+  const movieNames = new Set();
+  const cinemas = data.cinemas.map(cinema => {
+    cinemaNames.add(cinema.name);
+    return {
+      name: cinema.name,
+      id: cinema.id,
+      info: [{
+        address: cinema.info.address
+      }],
+      lat: cinema.info.lat,
+      lng: cinema.info.lng,
+      movies: cinema.movies.map(movie => {
+        movieNames.add(movie.name);
+        return {
+          name: movie.name,
+          id: movie.id,
+          versions: movie.versions.map(version => ({
+            type: version.type,
+            sessions: version.sessions.map(session => ({
+              datetime: session.datetime,
+              showtime: session.showtime,
+              date: session.date,
+              parent_movie_id: session.parent_movie_id,
+              tz_offset: session.tz_offset,
+              movie_id: session.movie_id,
+              cinema_id: session.cinema_id,
+              availability: session.availability,
+              id: session.id,
+              url: session.url,
+            }))
+          })).filter(version => version.sessions.length > 0) // Ensure versions with no sessions are filtered out
+        };
+      }).filter(movie => movie.versions.length > 0) // Ensure movies with no versions are filtered out
+    };
+  }).filter(cinema => cinema.movies.length > 0); // Ensure cinemas with no movies are filtered out
+
+  return {
+    cinemaNames: Array.from(cinemaNames),
+    movieNames: Array.from(movieNames),
+    showtimeDates,
+    cinemas
+  };
 };
 
-const filterMoviesInCinemas = (data, cinemaIds, movieIds) => {
+const filterMoviesInCinemasByDate = (data, cinemaIds, movieIds, date) => {
   const cinemaIdSet = new Set(cinemaIds);
   const movieIdSet = new Set(movieIds);
 
@@ -173,9 +191,15 @@ const filterMoviesInCinemas = (data, cinemaIds, movieIds) => {
         id: movie.id,
         versions: movie.versions.map(version => ({
           type: version.type,
-          sessions: version.sessions.map(session => ({
+          sessions: version.sessions.filter(session => {
+            const sessionDate = moment(session.datetime).format('YYYY-MM-DD');
+            return !date || sessionDate === date;
+          }).map(session => ({
             datetime: session.datetime,
             showtime: session.showtime,
+            date: session.date,
+            parent_movie_id: session.parent_movie_id,
+            tz_offset: session.tz_offset,
             movie_id: session.movie_id,
             cinema_id: session.cinema_id,
             availability: session.availability,
@@ -186,6 +210,25 @@ const filterMoviesInCinemas = (data, cinemaIds, movieIds) => {
       })).filter(movie => movie.versions.length > 0) // Ensure movies with no versions are filtered out
     })).filter(cinema => cinema.movies.length > 0) // Ensure cinemas with no movies are filtered out
   };
+};
+
+const getLastSessionDate = data => {
+  let lastDate = null;
+
+  data.cinemas.forEach(cinema => {
+    cinema.movies.forEach(movie => {
+      movie.versions.forEach(version => {
+        version.sessions.forEach(session => {
+          const sessionDate = moment(session.datetime);
+          if (!lastDate || sessionDate.isAfter(lastDate)) {
+            lastDate = sessionDate;
+          }
+        });
+      });
+    });
+  });
+
+  return lastDate ? lastDate.format('YYYY-MM-DD') : null;
 };
 
 const writeJsonFile = (filePath, data) => {
@@ -210,38 +253,46 @@ const main = async () => {
   rl.question('Please enter the document reference ID: ', async docRefId => {
     rl.question('Please enter the cinema IDs (comma-separated, leave blank for all): ', async cinemaIdsStr => {
       rl.question('Please enter the movie IDs (comma-separated, leave blank for all): ', async movieIdsStr => {
-        try {
-          const cinemaIds = cinemaIdsStr ? cinemaIdsStr.split(',').map(id => parseInt(id.trim(), 10)) : [];
-          const movieIds = movieIdsStr ? movieIdsStr.split(',').map(id => parseInt(id.trim(), 10)) : [];
-          
-          const doc = await db.collection('sessions').doc(docRefId).get();
-          if (!doc.exists) {
-            console.error('Document not found!');
+        rl.question('Please enter the date (YYYY-MM-DD, leave blank for all): ', async dateStr => {
+          try {
+            const cinemaIds = cinemaIdsStr ? cinemaIdsStr.split(',').map(id => parseInt(id.trim(), 10)) : [];
+            const movieIds = movieIdsStr ? movieIdsStr.split(',').map(id => parseInt(id.trim(), 10)) : [];
+            const date = dateStr ? moment(dateStr).format('YYYY-MM-DD') : null;
+            
+            const doc = await db.collection('sessions').doc(docRefId).get();
+            if (!doc.exists) {
+              console.error('Document not found!');
+              rl.close();
+              return;
+            }
+
+            const data = doc.data();
+            if (!data || !data.showtimes || !data.showtimes.cinemas) {
+              console.error('No cinemas data found in the document.');
+              rl.close();
+              return;
+            }
+
+            const showtimeDates = data.showtimes.dates || [];
+            const filteredData = filterMoviesInCinemasByDate(data.showtimes, cinemaIds, movieIds, date);
+            const simplifiedData = simplifyJson(filteredData, showtimeDates);
+
+            const outputDir = path.join(__dirname, 'showtimes', 'simplify'); // Path to the output directory
+            if (!fs.existsSync(outputDir)) {
+              fs.mkdirSync(outputDir, { recursive: true });
+            }
+            const outputFilePath = path.join(outputDir, 'simplified.json'); // Path to save the simplified JSON file
+
+            writeJsonFile(outputFilePath, simplifiedData);
+
+            const lastSessionDate = getLastSessionDate(filteredData);
+            console.log('Last session date:', lastSessionDate);
+          } catch (error) {
+            console.error('Error:', error);
+          } finally {
             rl.close();
-            return;
           }
-
-          const data = doc.data();
-          if (!data || !data.showtimes || !data.showtimes.cinemas) {
-            console.error('No cinemas data found in the document.');
-            rl.close();
-            return;
-          }
-
-          const simplifiedData = filterMoviesInCinemas(data.showtimes, cinemaIds, movieIds);
-
-          const outputDir = path.join(__dirname, 'showtimes', 'simplify'); // Path to the output directory
-          if (!fs.existsSync(outputDir)) {
-            fs.mkdirSync(outputDir, { recursive: true });
-          }
-          const outputFilePath = path.join(outputDir, 'simplified.json'); // Path to save the simplified JSON file
-
-          writeJsonFile(outputFilePath, simplifiedData);
-        } catch (error) {
-          console.error('Error:', error);
-        } finally {
-          rl.close();
-        }
+        });
       });
     });
   });
