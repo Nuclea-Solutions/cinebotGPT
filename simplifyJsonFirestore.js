@@ -155,10 +155,12 @@ const simplifyJson = data => {
   })).filter(cinema => cinema.movies.length > 0); // Ensure cinemas with no movies are filtered out
 };
 
-const filterMoviesInCinemas = (data, movieIds) => {
+const filterMoviesInCinemas = (data, cinemaIds, movieIds) => {
+  const cinemaIdSet = new Set(cinemaIds);
   const movieIdSet = new Set(movieIds);
+
   return {
-    cinemas: data.cinemas.map(cinema => ({
+    cinemas: data.cinemas.filter(cinema => cinemaIdSet.has(cinema.id)).map(cinema => ({
       name: cinema.name,
       id: cinema.id,
       info: [{
@@ -206,37 +208,41 @@ const extractTimeZoneFromIsoDate = isoDate => isoDate.match(/(-|\+)([0-9]{2}):([
 
 const main = async () => {
   rl.question('Please enter the document reference ID: ', async docRefId => {
-    rl.question('Please enter the movie IDs (comma-separated): ', async movieIdsStr => {
-      try {
-        const movieIds = movieIdsStr.split(',').map(id => parseInt(id.trim(), 10));
-        const doc = await db.collection('sessions').doc(docRefId).get();
-        if (!doc.exists) {
-          console.error('Document not found!');
+    rl.question('Please enter the cinema IDs (comma-separated): ', async cinemaIdsStr => {
+      rl.question('Please enter the movie IDs (comma-separated): ', async movieIdsStr => {
+        try {
+          const cinemaIds = cinemaIdsStr.split(',').map(id => parseInt(id.trim(), 10));
+          const movieIds = movieIdsStr.split(',').map(id => parseInt(id.trim(), 10));
+          
+          const doc = await db.collection('sessions').doc(docRefId).get();
+          if (!doc.exists) {
+            console.error('Document not found!');
+            rl.close();
+            return;
+          }
+
+          const data = doc.data();
+          if (!data || !data.showtimes || !data.showtimes.cinemas) {
+            console.error('No cinemas data found in the document.');
+            rl.close();
+            return;
+          }
+
+          const simplifiedData = filterMoviesInCinemas(data.showtimes, cinemaIds, movieIds);
+
+          const outputDir = path.join(__dirname, 'showtimes', 'simplify'); // Path to the output directory
+          if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+          }
+          const outputFilePath = path.join(outputDir, 'simplified.json'); // Path to save the simplified JSON file
+
+          writeJsonFile(outputFilePath, simplifiedData);
+        } catch (error) {
+          console.error('Error:', error);
+        } finally {
           rl.close();
-          return;
         }
-
-        const data = doc.data();
-        if (!data || !data.showtimes || !data.showtimes.cinemas) {
-          console.error('No cinemas data found in the document.');
-          rl.close();
-          return;
-        }
-
-        const simplifiedData = filterMoviesInCinemas(data.showtimes, movieIds);
-
-        const outputDir = path.join(__dirname, 'showtimes', 'simplify'); // Path to the output directory
-        if (!fs.existsSync(outputDir)) {
-          fs.mkdirSync(outputDir, { recursive: true });
-        }
-        const outputFilePath = path.join(outputDir, 'simplified.json'); // Path to save the simplified JSON file
-
-        writeJsonFile(outputFilePath, simplifiedData);
-      } catch (error) {
-        console.error('Error:', error);
-      } finally {
-        rl.close();
-      }
+      });
     });
   });
 };
