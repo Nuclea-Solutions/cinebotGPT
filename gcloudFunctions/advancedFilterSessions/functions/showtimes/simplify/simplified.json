@@ -1,0 +1,98 @@
+{
+  "cinemaNames": [
+    "Guadalajara"
+  ],
+  "movieNames": [
+    "Haikyu!! La Batalla Del Basurero"
+  ],
+  "showtimeDates": [
+    "2024-06-05",
+    "2024-06-06",
+    "2024-06-07",
+    "2024-06-08",
+    "2024-06-09",
+    "2024-06-10",
+    "2024-06-11",
+    "2024-06-12",
+    "2024-06-13",
+    "2024-06-14",
+    "2024-06-15",
+    "2024-06-16",
+    "2024-06-17",
+    "2024-06-18",
+    "2024-06-19",
+    "2024-06-20",
+    "2024-06-21",
+    "2024-06-22",
+    "2024-06-23",
+    "2024-06-24",
+    "2024-06-25",
+    "2024-06-26"
+  ],
+  "cinemas": [
+    {
+      "name": "Guadalajara",
+      "id": 118,
+      "info": [
+        {}
+      ],
+      "movies": [
+        {
+          "name": "Haikyu!! La Batalla Del Basurero",
+          "id": 60483,
+          "versions": [
+            {
+              "type": [
+                "lang_es",
+                "traditional"
+              ],
+              "sessions": [
+                {
+                  "datetime": "2024-06-05T13:20:00-06:00",
+                  "date": 1717615200,
+                  "parent_movie_id": 60483,
+                  "tz_offset": -21600,
+                  "movie_id": 60503,
+                  "cinema_id": 118,
+                  "availability": "high",
+                  "id": "54840455",
+                  "url": "https://cinemex.com/checkout/54840455"
+                },
+                {
+                  "datetime": "2024-06-05T17:40:00-06:00",
+                  "date": 1717630800,
+                  "parent_movie_id": 60483,
+                  "tz_offset": -21600,
+                  "movie_id": 60503,
+                  "cinema_id": 118,
+                  "availability": "high",
+                  "id": "54840457",
+                  "url": "https://cinemex.com/checkout/54840457"
+                }
+              ]
+            },
+            {
+              "type": [
+                "lang_sub",
+                "traditional"
+              ],
+              "sessions": [
+                {
+                  "datetime": "2024-06-05T15:30:00-06:00",
+                  "date": 1717623000,
+                  "parent_movie_id": 60483,
+                  "tz_offset": -21600,
+                  "movie_id": 60482,
+                  "cinema_id": 118,
+                  "availability": "high",
+                  "id": "54840456",
+                  "url": "https://cinemex.com/checkout/54840456"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
